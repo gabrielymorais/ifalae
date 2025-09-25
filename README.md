@@ -1,50 +1,63 @@
-# Welcome to your Expo app 👋
+# IFalaê — App (Expo + React Native)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![IFalaê — Home](./assets/readme/home.png)
 
-## Get started
+> Feed social do IFCE, feito com Expo + React Native. Esta é a tela principal com Stories, Composer e Feed.
 
-1. Install dependencies
+<p align="center">
+  <a href="https://expo.dev/"><img alt="Expo" src="https://img.shields.io/badge/Expo-51+-000?logo=expo&logoColor=white"></a>
+  <a href="https://reactnative.dev/"><img alt="React Native" src="https://img.shields.io/badge/React%20Native-0.75+-61DAFB?logo=react&logoColor=000"></a>
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white">
+  <img alt="Platform" src="https://img.shields.io/badge/Android%20%7C%20iOS-Mobile-34C759">
+  <img alt="License" src="https://img.shields.io/badge/License-MIT-000">
+</p>
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## ✨ Destaques
 
-   ```bash
-   npx expo start
-   ```
+* **UI moderna e leve** (cards claros, sombras suaves, chips)
+* **Stories** com imagens remotas (Pravatar/RandomUser ou sua API)
+* **Composer** (“O que você está pensando…?”)
+* **Feed** com imagens locais *ou* remotas
+* **Bottom bar custom** (Home, Buscar, Criar, Perfil)
+* Estruturado com **Expo Router**
 
-In the output, you'll find options to open the app in a
+## 🗂️ Estrutura
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+app/
+  _layout.tsx            # Stack root
+  (tabs)/
+    _layout.tsx          # Tabs com bottom bar custom
+    index.tsx            # Home (Stories + Feed)
+    explore.tsx          # Buscar
+    profile.tsx          # Perfil
+assets/
+  images/                # Imagens do feed
+  stories/               # Avatares dos stories (se usar local)
+  readme/
+    home.png             # Screenshot usado no README ← coloque aqui
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🚀 Começando
 
-## Learn more
+```bash
+# 1) instalar dependências
+npm i
 
-To learn more about developing your project with Expo, look at the following resources:
+# 2) iniciar
+npx expo start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Abra no **Expo Go** (Android/iOS) ou emulador.
 
-## Join the community
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🤝 Contribuindo
+
+Pull requests são muito bem-vindos. Padrão de commits sugerido: **conventional commits**.
+
+## 📝 Licença
+
+MIT © 2025 IFalaê
